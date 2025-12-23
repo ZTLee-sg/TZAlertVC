@@ -8,16 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		1933498047435DE31E3A0548B5A4007C /* TZAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14030A5253421F6A32E147E091037E70 /* TZAlertVC.swift */; };
-		2B2F013F99C841DB05F1E42B488BDF3C /* Pods-TZAlertVC_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6554FEA7654F1E6E0BCF990609F8A65 /* Pods-TZAlertVC_Example-dummy.m */; };
-		2C2C551F08464C0D0AED51AEBCDE5B8C /* Pods-TZAlertVC_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F3415083B78CDFB4A2D1DD265E3A4C /* Pods-TZAlertVC_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3640B0E364471242C06F7152BBC7944B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		6AD65CD0E9901368E6E5B7551A8E4AB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		812FFD5E5369599A2D5DD579F86873CE /* TZButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 507C42652F21E70D1A3580A370D11747 /* TZButton-dummy.m */; };
 		8869D76F5A7389C92219CC28275961A4 /* TZAlertVC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE65A3FF470B6DBD5A7A2F189163F50A /* TZAlertVC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7440C45CC2655B515CFBC316169F756 /* TZAlertVC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A46A7F770FA2C4FB3835767F560C50 /* TZAlertVC-dummy.m */; };
-		D64846A5190DAD9A0BD3D8E6B4B83997 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		C1EAF619A49166A35AE07E0CAEDD88FF /* Pods-TZAlertVC_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F3415083B78CDFB4A2D1DD265E3A4C /* Pods-TZAlertVC_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBEC61CEDD8C668000F10D1EBF3348D6 /* TZButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E99A6A04DCA97DA00C98F528B2AF5A3 /* TZButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E32EC5A9D7BB0ED24663D755ABB49EE4 /* Pods-TZAlertVC_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6554FEA7654F1E6E0BCF990609F8A65 /* Pods-TZAlertVC_Example-dummy.m */; };
+		E4C5A4641905BF842D14D1FA68212F2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		FEECE6BC109DA0B04C1AA34C071BA6DB /* TZButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99064B0C4ED6D8F2E817ECBE379E7339 /* TZButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9E6A4C42F0AC1E1E01C8E453BC2F1E6D /* PBXContainerItemProxy */ = {
+		5524119F1F8C363F701F507E614FA82E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB303A36F10C1F40AA0281A12341E475;
+			remoteInfo = TZButton;
+		};
+		B6597DD2CB3C6B936B663D5900D4201A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -28,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		0CE695B61716ECEB820DDBE0A563CD19 /* Pods-TZAlertVC_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TZAlertVC_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		0E99A6A04DCA97DA00C98F528B2AF5A3 /* TZButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TZButton-umbrella.h"; sourceTree = "<group>"; };
 		14030A5253421F6A32E147E091037E70 /* TZAlertVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TZAlertVC.swift; path = TZAlertVC/Classes/TZAlertVC.swift; sourceTree = "<group>"; };
 		2A19110E26AD037B2BD9FB87696DC3F9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		36F3415083B78CDFB4A2D1DD265E3A4C /* Pods-TZAlertVC_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TZAlertVC_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -35,30 +47,38 @@
 		38AB134F47F779C48FB47D2889F7466B /* TZAlertVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TZAlertVC.release.xcconfig; sourceTree = "<group>"; };
 		45437957A49842C5097E70495AF76B78 /* TZAlertVC.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TZAlertVC.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4AF1E9AFA0C4051A81ABB32AC98D849E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		507C42652F21E70D1A3580A370D11747 /* TZButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TZButton-dummy.m"; sourceTree = "<group>"; };
 		5F7D55FF3316340E32700DCDB15AC5ED /* TZAlertVC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TZAlertVC.modulemap; sourceTree = "<group>"; };
 		68520C70A3B747C866037EBF2864C36B /* Pods-TZAlertVC_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TZAlertVC_Example-Info.plist"; sourceTree = "<group>"; };
 		724DF162B5685A2781E6BBA513931E75 /* TZAlertVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TZAlertVC.debug.xcconfig; sourceTree = "<group>"; };
 		7D00FF7988B81E8AEF0C46CEA4E91EF8 /* TZAlertVC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TZAlertVC-prefix.pch"; sourceTree = "<group>"; };
 		7F8B533AB3D33FF7986CE3AFE3CFDC15 /* Pods-TZAlertVC_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TZAlertVC_Example-frameworks.sh"; sourceTree = "<group>"; };
+		80FA3ADA56F2E80ADB8317719164DF15 /* TZButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TZButton.debug.xcconfig; sourceTree = "<group>"; };
 		82A46A7F770FA2C4FB3835767F560C50 /* TZAlertVC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TZAlertVC-dummy.m"; sourceTree = "<group>"; };
 		8EF9FA24272B50EA0E2700A8359C1F16 /* Pods-TZAlertVC_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TZAlertVC_Example"; path = Pods_TZAlertVC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99064B0C4ED6D8F2E817ECBE379E7339 /* TZButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TZButton.swift; path = TZButton/Classes/TZButton.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA77027EE9F96F84CB5E9762ADE13046 /* Pods-TZAlertVC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TZAlertVC_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B3B8F96AC0EC3A3E4BDB6A3527BBB214 /* TZButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TZButton-Info.plist"; sourceTree = "<group>"; };
 		B950CDCD54D53748F7985899AAD6D1AB /* TZAlertVC */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TZAlertVC; path = TZAlertVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE11AF47969F1EEE4B141BF93A86729 /* TZButton */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TZButton; path = TZButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6554FEA7654F1E6E0BCF990609F8A65 /* Pods-TZAlertVC_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TZAlertVC_Example-dummy.m"; sourceTree = "<group>"; };
 		CA8B77FC49A27DFBC3416EEBFEC38B5A /* Pods-TZAlertVC_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TZAlertVC_Example.modulemap"; sourceTree = "<group>"; };
+		CB023564752FF96E636D137E4F8F2C9D /* TZButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TZButton.release.xcconfig; sourceTree = "<group>"; };
 		CE1B40170A428163739A60619B405F8C /* Pods-TZAlertVC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TZAlertVC_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E445AC9D4B396CB5D5A780FFC777F6DE /* TZAlertVC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TZAlertVC-Info.plist"; sourceTree = "<group>"; };
 		E834D1451FF681BBF3267A771A5EB3D8 /* Pods-TZAlertVC_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TZAlertVC_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ED87C98E72A5760023838B4ACC9A38C3 /* TZButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TZButton.modulemap; sourceTree = "<group>"; };
 		EE65A3FF470B6DBD5A7A2F189163F50A /* TZAlertVC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TZAlertVC-umbrella.h"; sourceTree = "<group>"; };
+		F66EA976C0FE519EFEC9714270463CBB /* TZButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TZButton-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0C5F3B8738B198F1BC51B340AC6D2430 /* Frameworks */ = {
+		4D40B35711FD8BAB212C715AE24C99DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D64846A5190DAD9A0BD3D8E6B4B83997 /* Foundation.framework in Frameworks */,
+				6AD65CD0E9901368E6E5B7551A8E4AB1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,9 +90,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF94EB20EEABF3DA51ACF7EDF64BA914 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4C5A4641905BF842D14D1FA68212F2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1318743DCB7DD1BC7CBDECF5983A6171 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED87C98E72A5760023838B4ACC9A38C3 /* TZButton.modulemap */,
+				507C42652F21E70D1A3580A370D11747 /* TZButton-dummy.m */,
+				B3B8F96AC0EC3A3E4BDB6A3527BBB214 /* TZButton-Info.plist */,
+				F66EA976C0FE519EFEC9714270463CBB /* TZButton-prefix.pch */,
+				0E99A6A04DCA97DA00C98F528B2AF5A3 /* TZButton-umbrella.h */,
+				80FA3ADA56F2E80ADB8317719164DF15 /* TZButton.debug.xcconfig */,
+				CB023564752FF96E636D137E4F8F2C9D /* TZButton.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TZButton";
+			sourceTree = "<group>";
+		};
 		3B4958DFBF9727E4614723850CA64DEE /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +142,14 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		9A03DD3FBFF06F886276E40037CC491D /* Products */ = {
+		8AEA0C16D8296FC19ED838E0928DAADB /* TZButton */ = {
 			isa = PBXGroup;
 			children = (
-				8EF9FA24272B50EA0E2700A8359C1F16 /* Pods-TZAlertVC_Example */,
-				B950CDCD54D53748F7985899AAD6D1AB /* TZAlertVC */,
+				99064B0C4ED6D8F2E817ECBE379E7339 /* TZButton.swift */,
+				1318743DCB7DD1BC7CBDECF5983A6171 /* Support Files */,
 			);
-			name = Products;
+			name = TZButton;
+			path = TZButton;
 			sourceTree = "<group>";
 		};
 		B20F6404A01222513BBAAE1F56394C19 /* Pods-TZAlertVC_Example */ = {
@@ -142,7 +186,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				4EB648C578F4DE8C8EF24D5195AF63B0 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				9A03DD3FBFF06F886276E40037CC491D /* Products */,
+				DB1E2572E50991E2B2C6E05A8107E352 /* Pods */,
+				E60456D4463AAC58F29238E55A925BBC /* Products */,
 				3D57AE3EEE48B2AB21C58B7AC0C88C1C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -155,12 +200,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DB1E2572E50991E2B2C6E05A8107E352 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AEA0C16D8296FC19ED838E0928DAADB /* TZButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		E60456D4463AAC58F29238E55A925BBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EF9FA24272B50EA0E2700A8359C1F16 /* Pods-TZAlertVC_Example */,
+				B950CDCD54D53748F7985899AAD6D1AB /* TZAlertVC */,
+				BEE11AF47969F1EEE4B141BF93A86729 /* TZButton */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		E93D40F4D0FD22B4F3CF9FEE18A1BA78 /* Support Files */ = {
@@ -181,6 +244,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2685F67BE46217203C23F65815B7AFF8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBEC61CEDD8C668000F10D1EBF3348D6 /* TZButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AD199BE7839CA6A3B4493B777EC675C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1EAF619A49166A35AE07E0CAEDD88FF /* Pods-TZAlertVC_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE727BC14FC5E6ADE5CA81CC742C71A1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,30 +268,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3DF38C0135075B4E525B1DF7740AF5C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2C2C551F08464C0D0AED51AEBCDE5B8C /* Pods-TZAlertVC_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		16837DCEBEF242E34FB66630D84F4E91 /* Pods-TZAlertVC_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF34244CAE513F452C5E64F0B391BF25 /* Build configuration list for PBXNativeTarget "Pods-TZAlertVC_Example" */;
+			buildConfigurationList = CA567D6668EB0F4525497E4B020D518B /* Build configuration list for PBXNativeTarget "Pods-TZAlertVC_Example" */;
 			buildPhases = (
-				F3DF38C0135075B4E525B1DF7740AF5C /* Headers */,
-				3212BC3C108987E3AB425B6120904E72 /* Sources */,
-				0C5F3B8738B198F1BC51B340AC6D2430 /* Frameworks */,
-				1CD2221AAD8D6DCA151A02186C2BE37E /* Resources */,
+				2AD199BE7839CA6A3B4493B777EC675C /* Headers */,
+				925EB26A3A94861AA9424F0EF0050231 /* Sources */,
+				CF94EB20EEABF3DA51ACF7EDF64BA914 /* Frameworks */,
+				02976EAD83848A0CF710FF404DCD3DAD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				20D7283D8BE769A7567E1D7E2E588EA4 /* PBXTargetDependency */,
+				0F72C5C4EEB9E8CFD906CFD566DC88CD /* PBXTargetDependency */,
+				9AD2135B077BBE97A230EFA3946CD648 /* PBXTargetDependency */,
 			);
 			name = "Pods-TZAlertVC_Example";
 			productName = Pods_TZAlertVC_Example;
@@ -237,6 +309,24 @@
 			productReference = B950CDCD54D53748F7985899AAD6D1AB /* TZAlertVC */;
 			productType = "com.apple.product-type.framework";
 		};
+		FB303A36F10C1F40AA0281A12341E475 /* TZButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53184E36C47C6B57D16FEFE9F303CF26 /* Build configuration list for PBXNativeTarget "TZButton" */;
+			buildPhases = (
+				2685F67BE46217203C23F65815B7AFF8 /* Headers */,
+				831A7F2BFA702F65CCA286622F604301 /* Sources */,
+				4D40B35711FD8BAB212C715AE24C99DC /* Frameworks */,
+				EDAF4CFF9A219E0822CB81A56CBE2B6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TZButton;
+			productName = TZButton;
+			productReference = BEE11AF47969F1EEE4B141BF93A86729 /* TZButton */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -257,18 +347,19 @@
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			minimizedProjectReferenceProxies = 0;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 9A03DD3FBFF06F886276E40037CC491D /* Products */;
+			productRefGroup = E60456D4463AAC58F29238E55A925BBC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				16837DCEBEF242E34FB66630D84F4E91 /* Pods-TZAlertVC_Example */,
 				2753C17DF6F3B14C8E48FF0B1E7A434D /* TZAlertVC */,
+				FB303A36F10C1F40AA0281A12341E475 /* TZButton */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1CD2221AAD8D6DCA151A02186C2BE37E /* Resources */ = {
+		02976EAD83848A0CF710FF404DCD3DAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,17 +373,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		3212BC3C108987E3AB425B6120904E72 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+		EDAF4CFF9A219E0822CB81A56CBE2B6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B2F013F99C841DB05F1E42B488BDF3C /* Pods-TZAlertVC_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		7A949CB216EB67ABE630F13837D28086 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,89 +392,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		831A7F2BFA702F65CCA286622F604301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEECE6BC109DA0B04C1AA34C071BA6DB /* TZButton.swift in Sources */,
+				812FFD5E5369599A2D5DD579F86873CE /* TZButton-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		925EB26A3A94861AA9424F0EF0050231 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32EC5A9D7BB0ED24663D755ABB49EE4 /* Pods-TZAlertVC_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		20D7283D8BE769A7567E1D7E2E588EA4 /* PBXTargetDependency */ = {
+		0F72C5C4EEB9E8CFD906CFD566DC88CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TZAlertVC;
 			target = 2753C17DF6F3B14C8E48FF0B1E7A434D /* TZAlertVC */;
-			targetProxy = 9E6A4C42F0AC1E1E01C8E453BC2F1E6D /* PBXContainerItemProxy */;
+			targetProxy = B6597DD2CB3C6B936B663D5900D4201A /* PBXContainerItemProxy */;
+		};
+		9AD2135B077BBE97A230EFA3946CD648 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TZButton;
+			target = FB303A36F10C1F40AA0281A12341E475 /* TZButton */;
+			targetProxy = 5524119F1F8C363F701F507E614FA82E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4F6A77F05BEBE97B2BE9F12FAEEA4964 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE1B40170A428163739A60619B405F8C /* Pods-TZAlertVC_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-TZAlertVC_Example/Pods-TZAlertVC_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TZAlertVC_Example/Pods-TZAlertVC_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		65635D6F603ED9FFBA461F5416FAC2EA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA77027EE9F96F84CB5E9762ADE13046 /* Pods-TZAlertVC_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-TZAlertVC_Example/Pods-TZAlertVC_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TZAlertVC_Example/Pods-TZAlertVC_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -447,6 +489,41 @@
 			};
 			name = Release;
 		};
+		7FB5AA184804DDC69B57CACB52AA4CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE1B40170A428163739A60619B405F8C /* Pods-TZAlertVC_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-TZAlertVC_Example/Pods-TZAlertVC_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TZAlertVC_Example/Pods-TZAlertVC_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		87DCDF1DA10DB714523709AA4D2C29C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 724DF162B5685A2781E6BBA513931E75 /* TZAlertVC.debug.xcconfig */;
@@ -481,6 +558,42 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		8F2D54DAC4E91A382FA86A682163E934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA77027EE9F96F84CB5E9762ADE13046 /* Pods-TZAlertVC_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-TZAlertVC_Example/Pods-TZAlertVC_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TZAlertVC_Example/Pods-TZAlertVC_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		C4EEDB4704783FC3F325968B51BA89BB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -584,6 +697,77 @@
 			};
 			name = Debug;
 		};
+		D74198081677D2CD8D71758E2AF2B524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB023564752FF96E636D137E4F8F2C9D /* TZButton.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/TZButton/TZButton-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/TZButton/TZButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TZButton/TZButton.modulemap";
+				PRODUCT_MODULE_NAME = TZButton;
+				PRODUCT_NAME = TZButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F949DA5202F99FCF641C8F09819EBE50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80FA3ADA56F2E80ADB8317719164DF15 /* TZButton.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/TZButton/TZButton-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/TZButton/TZButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TZButton/TZButton.modulemap";
+				PRODUCT_MODULE_NAME = TZButton;
+				PRODUCT_NAME = TZButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -605,11 +789,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF34244CAE513F452C5E64F0B391BF25 /* Build configuration list for PBXNativeTarget "Pods-TZAlertVC_Example" */ = {
+		53184E36C47C6B57D16FEFE9F303CF26 /* Build configuration list for PBXNativeTarget "TZButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F6A77F05BEBE97B2BE9F12FAEEA4964 /* Debug */,
-				65635D6F603ED9FFBA461F5416FAC2EA /* Release */,
+				F949DA5202F99FCF641C8F09819EBE50 /* Debug */,
+				D74198081677D2CD8D71758E2AF2B524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA567D6668EB0F4525497E4B020D518B /* Build configuration list for PBXNativeTarget "Pods-TZAlertVC_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FB5AA184804DDC69B57CACB52AA4CFB /* Debug */,
+				8F2D54DAC4E91A382FA86A682163E934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

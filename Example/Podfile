@@ -4,6 +4,7 @@ platform :ios, '10.0'
 
 target 'TZAlertVC_Example' do
   pod 'TZAlertVC', :path => '../'
+  pod 'TZButton'
 
 #  target 'TZAlertVC_Tests' do
 #    inherit! :search_paths

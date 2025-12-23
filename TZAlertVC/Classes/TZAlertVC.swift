@@ -210,7 +210,11 @@ public class TZAlertVC: UIControl {
                 self.containerView.transform = CGAffineTransform(translationX: 0, y: self.maxContainerHeight)
             }
         } completion: {[weak self] _ in
-            guard let self = self, let dismissHandler = dismissHandler else { return }
+            guard let self = self else { return }
+            guard let dismissHandler = dismissHandler else {
+                self.removeFromSuperview()
+                return
+            }
             self.removeFromSuperview()
             dismissHandler() // 回调消失事件
         }

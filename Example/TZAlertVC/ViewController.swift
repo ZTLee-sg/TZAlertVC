@@ -8,6 +8,7 @@
 
 import UIKit
 import TZAlertVC
+import TZButton
 
 class ViewController: UIViewController {
     
@@ -36,13 +37,21 @@ class ViewController: UIViewController {
     
     @objc func showAlert(){
         let vw = TestAlertView()
-        _ = TZAlertVC.showAlert(with: vw, position: .center)
+        let alert = TZAlertVC.showAlert(with: vw, position: .center,maxWidth: UIScreen.main.bounds.width)
+        vw.block = {[weak alert] in
+            guard let alert = alert else { return }
+            alert.dismiss()
+        }
         
     }
     
     @objc func showSheet(){
         let vw = TestAlertView()
-        _ = TZAlertVC.showAlert(with: vw, position: .bottom)
+        let alert = TZAlertVC.showAlert(with: vw, position: .bottom,maxWidth: UIScreen.main.bounds.width)
+        vw.block = {[weak alert] in
+            guard let alert = alert else { return }
+            alert.dismiss()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,23 +62,25 @@ class ViewController: UIViewController {
 }
 
 class TestAlertView:UIView{
-    lazy var titleLab:UILabel = {
-        let lab = UILabel()
+    lazy var titleLab:TZButton = {
+        let lab = TZButton(imagePosition: .onlyText)
         lab.translatesAutoresizingMaskIntoConstraints = false
-        lab.text = "标题"
-        lab.textColor = .black
-        lab.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        lab.textAlignment = .center
+//        lab.text = "标题"
+        lab.setTitle("标题", for: .normal)
+        lab.setTitleColor(UIColor.black, for: .normal)
+        lab.setFont(UIFont.systemFont(ofSize: 16, weight: .bold))
+        lab.setInsets(UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8))
         return lab
     }()
     
     lazy var content:UILabel = {
         let lab = UILabel()
         lab.translatesAutoresizingMaskIntoConstraints = false
-        lab.text = "测试内容测试内容测试内容测试内容测试内容测试内容测试内容"
+        lab.text = "测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容"
         lab.numberOfLines = 0
         lab.textColor = .black
         lab.font = UIFont.systemFont(ofSize: 14)
+        lab.textAlignment = .center
         return lab
     }()
     lazy var cancel:UIButton = {
@@ -81,24 +92,22 @@ class TestAlertView:UIView{
         return btn
     }()
     
-    lazy var confirm:UIButton = {
-        let btn = UIButton()
-        btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.setTitle("确定", for: .normal)
-        btn.setTitleColor(.blue, for: .normal)
-        btn.addTarget(self, action: #selector(confirmHandler), for: .touchUpInside)
-        return btn
-    }()
-    
+//    lazy var confirm:UIButton = {
+//        let btn = UIButton()
+//        btn.translatesAutoresizingMaskIntoConstraints = false
+//        btn.setTitle("确定", for: .normal)
+//        btn.setTitleColor(.blue, for: .normal)
+//        btn.addTarget(self, action: #selector(confirmHandler), for: .touchUpInside)
+//        return btn
+//    }()
+    var block:(()->Void)?
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
     }
     
     convenience init(){
-//        self.init(frame: CGRect.zero)
-        self.init()
-        self.setupUI()
+        self.init(frame: CGRect.zero)
     }
     
     required init?(coder: NSCoder) {
@@ -111,49 +120,29 @@ class TestAlertView:UIView{
         addSubview(self.titleLab)
         addSubview(self.content)
         addSubview(self.cancel)
-        addSubview(self.confirm)
-        let line = UIView()
-        line.backgroundColor = .gray
-        line.alpha = 0.5
-        addSubview(line)
         NSLayoutConstraint.activate([
             titleLab.topAnchor.constraint(equalTo: topAnchor, constant: 8),
             titleLab.leadingAnchor.constraint(equalTo: leadingAnchor),
             titleLab.trailingAnchor.constraint(equalTo: trailingAnchor),
-            titleLab.heightAnchor.constraint(equalToConstant: 20),
             
             content.topAnchor.constraint(equalTo: titleLab.bottomAnchor, constant: 8),
             content.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
             content.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-//            content.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 64),
-            
-            line.topAnchor.constraint(equalTo: content.bottomAnchor,constant: 8),
-            line.leadingAnchor.constraint(equalTo: leadingAnchor),
-            line.trailingAnchor.constraint(equalTo: trailingAnchor),
-            line.heightAnchor.constraint(equalToConstant: 1),
-            
-            cancel.topAnchor.constraint(equalTo: line.bottomAnchor),
+            content.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width-64),
+            content.heightAnchor.constraint(greaterThanOrEqualToConstant: 80),
+            content.bottomAnchor.constraint(equalTo: bottomAnchor,constant: -80),
+
             cancel.leadingAnchor.constraint(equalTo: leadingAnchor),
+            cancel.trailingAnchor.constraint(equalTo: trailingAnchor),
             cancel.heightAnchor.constraint(equalToConstant: 44),
-            cancel.bottomAnchor.constraint(equalTo: bottomAnchor),
+            cancel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -12)
+//            cancel.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width-32),
             
-            confirm.centerYAnchor.constraint(equalTo: cancel.centerYAnchor),
-            confirm.leadingAnchor.constraint(equalTo: cancel.trailingAnchor),
-            confirm.trailingAnchor.constraint(equalTo: trailingAnchor),
-            confirm.heightAnchor.constraint(equalToConstant: 44),
-            confirm.widthAnchor.constraint(equalTo: cancel.widthAnchor, multiplier: 1)
         ])
-        
-        
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-//        content.widthAnchor.constraint(equalToConstant: self.bounds.size.width - 32).isActive = true
     }
     
     @objc func cancelHandler(){
-        
+        self.block?()
     }
     
     @objc func confirmHandler(){
