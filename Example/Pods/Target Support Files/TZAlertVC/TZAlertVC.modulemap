@@ -1,0 +1,6 @@
+framework module TZAlertVC {
+  umbrella header "TZAlertVC-umbrella.h"
+
+  export *
+  module * { export * }
+}

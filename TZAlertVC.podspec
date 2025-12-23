@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TZAlertVC'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of TZAlertVC.'
+  s.version          = '1.0.0'
+  s.summary          = '一个轻量级的iOS自定义Alert组件'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Leery TT/TZAlertVC'
+  s.homepage         = 'https://github.com/ZTLee-sg/TZAlertVC'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Leery TT' => '562265055@qq.com' }
-  s.source           = { :git => 'https://github.com/Leery TT/TZAlertVC.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/ZTLee-sg/TZAlertVC.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'TZAlertVC/Classes/**/*'
   
