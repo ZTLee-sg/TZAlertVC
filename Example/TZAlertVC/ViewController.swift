@@ -10,21 +10,39 @@ import UIKit
 import TZAlertVC
 
 class ViewController: UIViewController {
+    
+    lazy var button:UIButton = {
+        let btn = UIButton(frame: CGRect(x: 50, y: 100, width: 120, height: 80))
+        btn.setTitle("Show Alert", for: .normal)
+        btn.setTitleColor(.red, for: .normal)
+        btn.addTarget(self, action: #selector(showAlert), for: .touchUpInside)
+        return btn
+    }()
+    
+    lazy var button2:UIButton = {
+        let btn = UIButton(frame: CGRect(x: 200, y: 100, width: 120, height: 80))
+        btn.setTitle("Show Sheet", for: .normal)
+        btn.setTitleColor(.black, for: .normal)
+        btn.addTarget(self, action: #selector(showSheet), for: .touchUpInside)
+        return btn
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        DispatchQueue.main.asyncAfter(deadline: .now()+0.3, execute: {[weak self] in
-            guard let self = self else { return }
-            self.showAlert()
-        })
+        view.addSubview(self.button)
+        view.addSubview(self.button2)
     }
     
-    func showAlert(){
+    @objc func showAlert(){
         let vw = TestAlertView()
-        let alert = TZAlertVC.showAlert(with: vw, position: .center)
+        _ = TZAlertVC.showAlert(with: vw, position: .center)
         
+    }
+    
+    @objc func showSheet(){
+        let vw = TestAlertView()
+        _ = TZAlertVC.showAlert(with: vw, position: .bottom)
     }
 
     override func didReceiveMemoryWarning() {
@@ -78,8 +96,9 @@ class TestAlertView:UIView{
     }
     
     convenience init(){
-        self.init(frame: CGRect.zero)
-        
+//        self.init(frame: CGRect.zero)
+        self.init()
+        self.setupUI()
     }
     
     required init?(coder: NSCoder) {
@@ -106,6 +125,7 @@ class TestAlertView:UIView{
             content.topAnchor.constraint(equalTo: titleLab.bottomAnchor, constant: 8),
             content.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
             content.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+//            content.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 64),
             
             line.topAnchor.constraint(equalTo: content.bottomAnchor,constant: 8),
             line.leadingAnchor.constraint(equalTo: leadingAnchor),
@@ -125,6 +145,11 @@ class TestAlertView:UIView{
         ])
         
         
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+//        content.widthAnchor.constraint(equalToConstant: self.bounds.size.width - 32).isActive = true
     }
     
     @objc func cancelHandler(){

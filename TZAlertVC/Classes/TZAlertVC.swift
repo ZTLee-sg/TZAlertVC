@@ -130,19 +130,19 @@ public class TZAlertVC: UIControl {
     private func setupConstraints() {
 //        let safeArea = UIApplication.shared.keyWindow?.safeAreaLayoutGuide
         let screenWidth = UIScreen.main.bounds.width
-        self.containerWidth = containerView.widthAnchor.constraint(equalToConstant: maxContainerWidth)
-        self.containerHeight = containerView.heightAnchor.constraint(equalToConstant: maxContainerHeight)
+//        self.containerWidth = containerView.widthAnchor.constraint(lessThanOrEqualToConstant: maxContainerWidth)//constraint(equalToConstant: maxContainerWidth)
+//        self.containerHeight = containerView.heightAnchor.constraint(lessThanOrEqualToConstant: maxContainerHeight)//constraint(equalToConstant: maxContainerHeight)
         NSLayoutConstraint.activate([
             // 容器宽度约束：不超过最大宽度，且不小于0
-//            containerView.widthAnchor.constraint(lessThanOrEqualToConstant: maxContainerWidth),
-//            containerView.widthAnchor.constraint(greaterThanOrEqualToConstant: 0),
-//
-//            // 容器高度约束：不超过最大高度，且不小于0
-//            containerView.heightAnchor.constraint(lessThanOrEqualToConstant: maxContainerHeight),
-//            containerView.heightAnchor.constraint(greaterThanOrEqualToConstant: 0),
+            containerView.widthAnchor.constraint(lessThanOrEqualToConstant: maxContainerWidth),
+            containerView.widthAnchor.constraint(greaterThanOrEqualToConstant: 0),
+
+            // 容器高度约束：不超过最大高度，且不小于0
+            containerView.heightAnchor.constraint(lessThanOrEqualToConstant: maxContainerHeight),
+            containerView.heightAnchor.constraint(greaterThanOrEqualToConstant: 0),
             
-            containerWidth!,
-            containerHeight!,
+//            containerWidth!,
+//            containerHeight!,
             
             // 水平居中
             containerView.centerXAnchor.constraint(equalTo: centerXAnchor),

@@ -1,6 +1,0 @@
-framework module Pods_TZAlertVC_Tests {
-  umbrella header "Pods-TZAlertVC_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -5,10 +5,10 @@ platform :ios, '10.0'
 target 'TZAlertVC_Example' do
   pod 'TZAlertVC', :path => '../'
 
-  target 'TZAlertVC_Tests' do
-    inherit! :search_paths
+#  target 'TZAlertVC_Tests' do
+#    inherit! :search_paths
 
 #    pod 'Quick', '~> 2.2.0'
 #    pod 'Nimble', '~> 10.0.0'
-  end
+#  end
 end
