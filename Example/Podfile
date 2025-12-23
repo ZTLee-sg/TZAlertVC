@@ -8,7 +8,7 @@ target 'TZAlertVC_Example' do
   target 'TZAlertVC_Tests' do
     inherit! :search_paths
 
-    pod 'Quick', '~> 2.2.0'
-    pod 'Nimble', '~> 10.0.0'
+#    pod 'Quick', '~> 2.2.0'
+#    pod 'Nimble', '~> 10.0.0'
   end
 end

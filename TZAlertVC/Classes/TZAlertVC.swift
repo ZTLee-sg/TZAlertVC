@@ -13,7 +13,7 @@ public enum AlertPosition:Int {
     case bottom
 }
 
-class TZAlertVC: UIControl {
+public class TZAlertVC: UIControl {
 
     // MARK: - 对外配置属性
     /// 外部传入的自定义内容视图（核心）
@@ -219,7 +219,11 @@ class TZAlertVC: UIControl {
 
 extension TZAlertVC {
     /// 快速创建自定义Alert
-    public static func showAlert(with customView: UIView,position:AlertPosition,maxWidth:CGFloat = 300,maxHeight:CGFloat = UIScreen.main.bounds.height * 0.8,dismissHandler:(()->Void)?=nil) -> TZAlertVC {
+    public static func showAlert(with customView: UIView,
+                                 position:AlertPosition,
+                                 maxWidth:CGFloat = 300,
+                                 maxHeight:CGFloat = UIScreen.main.bounds.height * 0.8,
+                                 dismissHandler:(()->Void)?=nil) -> TZAlertVC {
         let alert = TZAlertVC(position: position, customContentView: customView)
         alert.maxContainerWidth = maxWidth
         alert.maxContainerHeight = maxHeight

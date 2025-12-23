@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TZAlertVC'
-  s.version          = '1.0.0'
+  s.version          = '1.0.2'
   s.summary          = '一个轻量级的iOS自定义Alert组件'
 
 # This description is used to generate tags and improve search results.

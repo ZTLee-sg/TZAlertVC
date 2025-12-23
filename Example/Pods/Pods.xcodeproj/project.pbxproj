@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		01BCC38FCB10D89173E0DA38374952A4 /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E4265253F0C2E2E88973422E9522FD /* ExampleGroup.swift */; };
-		030022694BE08B8C8DFB422C0A1BDAA3 /* YZAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E809250EA7E73AAD39779402F7BDE1 /* YZAlertVC.swift */; };
+		030022694BE08B8C8DFB422C0A1BDAA3 /* TZAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E809250EA7E73AAD39779402F7BDE1 /* TZAlertVC.swift */; };
 		079D14573A8969BF139818893422829A /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A458D51ED6F68A621AFFB83B1FD2B2 /* SuiteHooks.swift */; };
 		0A837F4FA08C9DA489BF6C5A347D0C54 /* QuickSpecBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3756750B9AD0146AE7AB1637B7A04F6A /* QuickSpecBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		104F5DCE198F7ACB14141B043A88F253 /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172BB982BCA0427B9B42EABFD8731C26 /* BeginWith.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -216,7 +216,7 @@
 		7257CDD5305E867BF5296DC8E03BF3F6 /* ExampleMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleMetadata.swift; path = Sources/Quick/ExampleMetadata.swift; sourceTree = "<group>"; };
 		7268C50218C0233AE7B5ECC071FFC5EF /* Pods-TZAlertVC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TZAlertVC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		72BCB5001BC7A8AFBB5EB0007C24334C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		75E809250EA7E73AAD39779402F7BDE1 /* YZAlertVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YZAlertVC.swift; path = TZAlertVC/Classes/YZAlertVC.swift; sourceTree = "<group>"; };
+		75E809250EA7E73AAD39779402F7BDE1 /* TZAlertVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TZAlertVC.swift; path = TZAlertVC/Classes/TZAlertVC.swift; sourceTree = "<group>"; };
 		762EBC5F74C0131A7CFB3173DEC4D053 /* QuickConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickConfiguration.swift; path = Sources/Quick/Configuration/QuickConfiguration.swift; sourceTree = "<group>"; };
 		79A0AA2B4C42AC735A9C6DBF55E6B309 /* DSL+Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DSL+Wait.swift"; path = "Sources/Nimble/DSL+Wait.swift"; sourceTree = "<group>"; };
 		7E80F95BEE7D5E81B59E1AC10271A246 /* QuickSpecBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickSpecBase.m; path = Sources/QuickObjCRuntime/QuickSpecBase.m; sourceTree = "<group>"; };
@@ -640,7 +640,7 @@
 		EB6228D7AAAE0DC6193FFDDCA67E4235 /* TZAlertVC */ = {
 			isa = PBXGroup;
 			children = (
-				75E809250EA7E73AAD39779402F7BDE1 /* YZAlertVC.swift */,
+				75E809250EA7E73AAD39779402F7BDE1 /* TZAlertVC.swift */,
 				386E0D3D9157BDDD15D0494D84A4FC2B /* Pod */,
 				DE73DE593BD5405C888449C00267D953 /* Support Files */,
 			);
@@ -997,7 +997,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				030022694BE08B8C8DFB422C0A1BDAA3 /* YZAlertVC.swift in Sources */,
+				030022694BE08B8C8DFB422C0A1BDAA3 /* TZAlertVC.swift in Sources */,
 				A9CA6C9ACC3DF390F2EEF98116C033D8 /* TZAlertVC-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
